@@ -1,0 +1,53 @@
+{
+  "name": "nextjs-hasura-boilerplate-frontend",
+  "license": "MIT",
+  "author": "nirmalya.email@gmail.com",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "next build",
+    "dev": "concurrently \"next dev\" \"yarn generate-graphql --watch\"",
+    "export": "next export",
+    "generate-graphql": "graphql-codegen --config codegen.yml --require dotenv/config",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.21",
+    "@chakra-ui/icons": "^1.0.13",
+    "@chakra-ui/react": "^1.6.4",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "dayjs": "^1.10.6",
+    "framer-motion": "^4.1.17",
+    "isomorphic-unfetch": "^3.1.0",
+    "isomorphic-ws": "^4.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "next": "^11.0.1",
+    "next-auth": "^3.27.2",
+    "pg": "^8.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "subscriptions-transport-ws": "^0.9.19",
+    "ws": "^7.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@graphql-codegen/cli": "^1.21.6",
+    "@graphql-codegen/introspection": "^1.18.2",
+    "@graphql-codegen/typescript": "^1.22.0",
+    "@graphql-codegen/typescript-operations": "^1.18.3",
+    "@graphql-codegen/typescript-react-apollo": "^2.3.0",
+    "@graphql-codegen/typescript-resolvers": "^1.19.5",
+    "@types/jsonwebtoken": "^8.5.4",
+    "@types/next": "^9.0.0",
+    "@types/node": "^16.0.0",
+    "@types/pg": "^8.6.0",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
+    "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.5.1",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  }
+}
